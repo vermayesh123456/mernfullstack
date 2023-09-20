@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        let arr1=[10,20,30,40,50];
+        let arr2=new Array();
+        arr2[2]=200;
+        arr2[3]=300;
+        arr2[4]=400;
+        arr2[5]=500;
+        let arr3=new Array(0,1,2,3);
+        for(let x of arr1){
+            console.log(x)
+        }
+        
+        let a=function(){
+            console.log("M2")
+        }
+        a();
+        let b=() =>console.log("M3")
+        b();
+
+
+        function f1(){
+            console.log("function one called by f2");
+        }
+        function f2(x,y){
+            x();
+            y()
+            console.log("I am F2");
+        }
+        f2(f1,b);
+
+        arr2.forEach(function(val,ind,arr2){
+            console.log(val,+" "+ind,+" "+arr2);
+
+        })
+
+        function f1(val,ind,arr)
+        {
+            console.log("value"," ",val," ","index"," ",ind) ;
+        }
+        arr2.forEach(f1)
+
+        arr2.forEach(val => console.log(val));
+
+        arr1.forEach((val,ind)=> console.log(val));
+
+        arr2.map(val=> console.log(val));
+
+        arr3.every(val=>{
+            return val>4;
+        })
+
+        console.log(arr3.every(val=>{
+            return val<=4;
+        }))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <p id="demo">Lorem</p> -->
+
+    <input type="text" id="i1" placeholder="Enter first Number">
+    <input type="text" id="i2" placeholder="Enter Second Number">
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mult()">x</button>
+    <button onclick="divide()">%</button>
+   <p id="i3">Result:</p>
+
+    <script>
+    //    alert("Hi");
+    //    document.write("how are you");
+    //    console.log("hola") 
+    // document.getElementById("demo").innerHTML = "Good morning";
+    // variables
+
+    // var a=10;
+    // var b=20;
+    // var c=a+b;
+    // document.write("the ans is "+" "+c)
+
+    // var d=10;
+    // var e="20";
+    // var f=d+e;
+    // document.write(f+"<br/>"); //br is used to give break 
+    // var g=null;
+    // var h;
+    // document.writeln(g);
+    // document.write(h);
+    // document.write(f);
+
+  //JS Functions
+// function functionName(argument) by defrault everyfunction will return undefines
+// two types of function with argument and without argument 
+
+//  function abc(a,b)
+//  {
+//     document.write(a+b);
+//     // return a+b;
+//  }
+//  abc(5,10)
+
+    function add()
+    {   
+        var i1=document.getElementById("i1").value;
+        a= Number.parseInt(i1);
+
+        var i2=document.getElementById("i2").value;
+        b= Number.parseInt(i2);
+
+        var prod=a+b;
+        document.getElementById("i3").innerHTML = "Result"+" "+prod;
+    }
+    function sub()
+    {   
+        var i1=document.getElementById("i1").value;
+        a= Number.parseInt(i1);
+
+        var i2=document.getElementById("i2").value;
+        b= Number.parseInt(i2);
+
+        var prod=a-b;
+        document.getElementById("i3").innerHTML = "Result"+" "+prod;
+    }
+    function mult()
+    {   
+        var i1=document.getElementById("i1").value;
+        a= Number.parseInt(i1);
+
+        var i2=document.getElementById("i2").value;
+        b= Number.parseInt(i2);
+
+        var prod=a*b;
+        document.getElementById("i3").innerHTML = "Result"+" "+prod;
+    }
+    function divide()
+    {   
+        var i1=document.getElementById("i1").value;
+        a= Number.parseInt(i1);
+
+        var i2=document.getElementById("i2").value;
+        b= Number.parseInt(i2);
+
+        var prod=a/b;
+        document.getElementById("i3").innerHTML = "Result"+" "+prod;
+    }
+
+    </script>
+</body>
+</html>

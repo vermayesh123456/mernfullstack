@@ -4,57 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css">
     <style>
         *{
-    margin: 0;
-    padding:0 ;
-    font-family: 'Courier New', Courier, monospace;
-    }
-    body
-        {
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: #23242a;
-        }
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
 
-    .box
-     {
-    position: relative;
-    width: 70%;
-    height: 800px;
-    background: #ffc31f;
-    border-radius: 4px;
-    overflow: hidden;
-    }
-    .font{
-       text-align: center;
-       margin-top: 50px;
-       justify-content: center;
-    }
-    .font h3{
-        padding: 30px;
-    }
+        }
+        body{
+            padding: 30px;
+            background-color: rgb(255, 177, 51);
+            display: flex;
+            
+        }
+        .contentleft{
+            margin-top: 60px;
+        }
+        .contentmiddle{
+            margin-top: 60px;
+        }
+        .contentleft a{
+            display: block;
+            background-color: white;
+            margin-bottom: 10px;
+            height: 70px;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+            padding-top: 8px;
+            width: 220px;
+            text-shadow: 1px 1px 2px rgb(255, 95, 207);
+        
+        
+        }
+        .contentmiddle a{
+            display: block;
+            height:70px ;
+            background: black;
+            margin-bottom: 10px;
+            width: 40px;
+        }
+       .contentright{
+        position: fixed;
+        left: 35%; 
+       }
+       h1{
+        font-size:60px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(236, 22, 168);
+        text-shadow: 1px 1px 2px rgb(3, 2, 3);
+        
+       }
+       .para{
+        margin-top: 30px;
+       }
+       p{
+        font-size: 25px;
+        margin: 10px;
+        font-weight: 600;
+        color: rgb(236, 22, 168);
+        text-shadow: 1px 1px 2px rgb(3, 2, 3);
+       }
+       h3{
+        font-size: 30px;
+        font-style: italic;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(33, 48, 76);
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+       }
+
     </style>
 </head>
 <body>
-   <div class="box">
-    <div class="navbar">
+   
+    <div class="contentleft">
         <a href="">Home</a> 
         <a href="">Musling</a> 
         <a href="">My town</a> 
-        <a href="">Links</a> 
+        <a href="">Links</a>
     </div>
-
-
-    <div class="font">
+    <div class="contentmiddle">
+        <a href=""></a> 
+        <a href=""></a> 
+        <a href=""></a> 
+        <a href=""></a>
+    </div>
+    <div class="contentright">
         <h1>My First Styled Page</h1>
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <h3>lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, mollitia.</h3>
+        <div class="para">
+            <p>Welcome To my Styled page</p>
+            <p>It lacks images , but atleast it has style, and it has links even if they dont go anywhere....</p>
+            <p>There should be more here but i will be adding all that in next assignment</p>
+            <p>------------------------------------------------------------------------------------------</p>  
+        </div>
+        <h3 >Made 2 september 2023</h3>
+        <h3 >Yash Verma</h3>
     </div>
-   </div> 
-   
+
 </body>
 </html>

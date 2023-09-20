@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+   
+
+
+  
+   
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script>
+        const obj1={name:"shankar",age:27,role:"trainer"};
+        console.log(obj1.name);
+        console.log(obj1.age);
+        console.log(obj1.role);
+
+        for(let x in obj1){
+            console.log(obj1[x]);
+        }
+
+        class Sample{
+            b=30;
+            def(){
+                console.log("M2")
+            }
+        }
+
+
+        class Demo extends Sample
+        {
+            constructor(){
+                super()
+                console.log("Cons");
+            }
+            a=10;
+            abc(){
+                console.log("M1");
+                return 35;
+            }
+        }
+        const obj2 = new Demo();
+        console.log(obj2.a);
+        console.log(obj2.abc());
+        console.log(obj2.b);
+        obj2.def();
+
+        const d = new Date();
+        console.log(d.getDate()); //20
+        console.log(d.getDay()); //0-Sun 3-Wed 6-Sat
+        console.log(d.getHours()); //10
+        console.log(d.getMinutes()); //41
+        console.log(d.getMonth()); //0-Jan 8-Sept 11-Dec
+        console.log(d.getFullYear()); //2023
+        console.log(d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear()); //20
+
+        
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
